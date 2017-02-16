@@ -20,11 +20,11 @@ func init() {
 //config section
 //
 //runnner:
-//  path: path to scripts
+//  path: path/to/scripts
 //  map:
 //   event_type:
-//     - script_name
-//     - scrip_name
+//     - script_name_1
+//     - script_name_2
 //
 
 type runner struct {

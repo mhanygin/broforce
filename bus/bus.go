@@ -100,19 +100,6 @@ func SafeRun(r func(ctx Context) error, sp SafeParams) func(ctx Context) error {
 	}
 }
 
-func withContextLogger(h Handler) Handler {
-	return func(e Event, ctx Context) error {
-		ctx.Log = logger.Logger4Handler(ctx.Name, e.Trace)
-		defer timeTrack(time.Now(), ctx)
-		return h(e, ctx)
-	}
-}
-
-func timeTrack(start time.Time, ctx Context) {
-	elapsed := time.Since(start)
-	ctx.Log.Debugf("func: %s, work time: %s", ctx.Name, elapsed)
-}
-
 func New(cfg config.ConfigData) *EventsBus {
 	once.Do(func() {
 		for _, acfg := range busAdapters {
@@ -147,7 +134,11 @@ func (p *EventsBus) Subscribe(subject string, ctx Context) {
 	for _, acfg := range busAdapters {
 		for _, et := range acfg.EventTypes {
 			if len(et.FindAllString(subject, -1)) == 1 {
-				ctx.Func = withContextLogger(ctx.Func)
+				ctx.Func = func(e Event, ctx Context) error {
+					ctx.Log = logger.Logger4Handler(ctx.Name, e.Trace)
+					defer ctx.Log.Debugf("func: %s, work time: %s", ctx.Name, time.Since(time.Now()))
+					return ctx.Func(e, ctx)
+				}
 				if ctx.Log == nil {
 					ctx.Log = logger.Logger4Handler(ctx.Name, "")
 				}

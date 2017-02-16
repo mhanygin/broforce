@@ -1,16 +1,16 @@
 package bus
 
 const (
-	TimerEvent            = "timer"
-	GithubHookEvent       = "github"
-	GitlabHookEvent       = "gitlab"
-	ServeCmdEvent         = "serve"
-	ServeCmdWithDataEvent = "serveWithData"
-	OutdatedEvent         = "outdate"
-	SlackMsgEvent         = "slackMessage"
-	SlackPostEvent        = "slackPostMessage"
-	JiraHookEvent         = "jira"
-	UnknownEvent          = "unknown"
+	TimerEvent            = "TIMER"
+	GithubHookEvent       = "GITHUB"
+	GitlabHookEvent       = "GITLAB"
+	ServeCmdEvent         = "SERVE"
+	ServeCmdWithDataEvent = "SERVE_WITH_DATA"
+	OutdatedEvent         = "OUTDATED"
+	SlackMsgEvent         = "SLACK_MESSAGE"
+	SlackPostEvent        = "SLACK_POST_MESSAGE"
+	JiraHookEvent         = "JIRA"
+	UnknownEvent          = "UNKNOWN"
 )
 
 const (

@@ -14,14 +14,14 @@ import (
 	"github.com/InnovaCo/broforce/tasks"
 )
 
-var version = "0.5.0"
+var Version = ""
 
 func main() {
 	cfgPath := kingpin.Flag("config", "Path to config.yml file.").Default("config.yml").String()
 	show := kingpin.Flag("show", "Show all task names.").Bool()
 	allow := kingpin.Flag("allow", "list of allowed tasks").Default(tasks.GetPoolString()).String()
 
-	kingpin.Version(version)
+	kingpin.Version(Version)
 	kingpin.Parse()
 
 	if *show {

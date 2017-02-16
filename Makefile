@@ -1,4 +1,4 @@
-VERSION?="0.1.0"
+VERSION?="1.1.0"
 DEST?=./bin
 
 default: install
@@ -9,7 +9,7 @@ test:
 
 build:
 	echo "==> Build binaries..."
-	go build -v -ldflags "-s -w -X main.version=${VERSION}" -o ${DEST}/broforce broforce.go
+	go build -v -ldflags "-s -w -X main.Version=${VERSION}" -o ${DEST}/broforce broforce.go
 
 install: test build
 	echo "==> Copy binaries to \$GOPATH/bin/..."
