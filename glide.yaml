@@ -1,4 +1,4 @@
-package: github.com/InnovaCo/broforce
+package: github.com/mhanygin/broforce
 import:
   - package: github.com/ghodss/yaml
   - package: github.com/satori/go.uuid
@@ -15,3 +15,4 @@ import:
   - package: github.com/satori/go.uuid
   - package: github.com/stretchr/testify
   - package: github.com/mhanygin/go-gocd
+  - package: gopkg.in/telegram-bot-api.v4

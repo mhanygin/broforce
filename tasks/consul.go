@@ -9,8 +9,8 @@ import (
 	"github.com/Jeffail/gabs"
 	"github.com/hashicorp/consul/api"
 
-	"github.com/InnovaCo/broforce/bus"
-	"github.com/InnovaCo/broforce/config"
+	"github.com/mhanygin/broforce/bus"
+	"github.com/mhanygin/broforce/config"
 )
 
 func init() {

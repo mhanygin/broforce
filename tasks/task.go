@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/InnovaCo/broforce/bus"
+	"github.com/mhanygin/broforce/bus"
 )
 
 var tasksPool = make(map[string]bus.Task)

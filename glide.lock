@@ -1,5 +1,5 @@
-hash: a9eaf581830b1ba11a6177407d9a2ee18eb554fd7ebb9351b6697dcc96648af5
-updated: 2017-02-07T17:00:49.145228415+03:00
+hash: e520867f5db02662790aae1f61fe57a0b8a3485fda3b37aed4d273eb4331b2e8
+updated: 2017-07-20T16:49:48.772086733+03:00
 imports:
 - name: github.com/alecthomas/template
   version: a0175ee3bccc567396460bf5acd36800cb10c49c
@@ -8,75 +8,101 @@ imports:
 - name: github.com/alecthomas/units
   version: 2efee857e7cfd4f3d0138cc3cbb1b4966962b93a
 - name: github.com/andygrunwald/go-jira
-  version: 8a4b1aca338f7f7a2b61bc6ad41db058c902dabd
+  version: aaa2d02b3ad37877e523eab9978638b107bdc821
 - name: github.com/fatih/structs
-  version: a720dfa8df582c51dee1b36feabb906bde1588bd
+  version: 7e5a8eef611ee84dd359503f3969f80df4c50723
 - name: github.com/fluent/fluent-logger-golang
-  version: 28bdb662295c1b7aca09c1a4edbf9430010775a9
+  version: d1deca7ddb1b2d3fdbfaaf15d8a7b4f5feadc461
   subpackages:
   - fluent
 - name: github.com/ghodss/yaml
-  version: bea76d6a4713e18b7f5321a2b020738552def3ea
+  version: 0ca9ea5df5451ffdf184b4428c902747c2c11cd7
+- name: github.com/golang/protobuf
+  version: 0a4f71a498b7c4812f64969510bcb4eca251e33a
+  subpackages:
+  - proto
 - name: github.com/google/go-github
-  version: 27c7c32b6d369610435bd2ad7b4d8554f235eb01
+  version: e062a8cd852f0fb981c8c9f837c214c4d1031870
   subpackages:
   - github
 - name: github.com/google/go-querystring
-  version: 9235644dd9e52eeae6fa48efd539fdc351a0af53
+  version: 53e6ce116135b80d037921a7fdd5138cf32d7a8a
   subpackages:
   - query
 - name: github.com/hashicorp/consul
-  version: 460bf5f71ef03adba83ed2b85c083a3f57b2f38e
+  version: 1774fdc2377cd24731d53ffc6f75ac4f60457643
   subpackages:
   - api
 - name: github.com/hashicorp/go-cleanhttp
-  version: ad28ea4487f05916463e2423a55166280e8254b5
+  version: 3573b8b52aa7b37b9358d966a898feb387f62437
+- name: github.com/hashicorp/go-rootcerts
+  version: 6bb64b370b90e7ef1fa532be9e591a81c3493e00
 - name: github.com/hashicorp/serf
-  version: f679d7594a349263f6118db40d87122d3a474e7d
+  version: bbeddf0b3ab3072a60525afbd6b6f47d33839eee
   subpackages:
   - coordinate
 - name: github.com/Jeffail/gabs
-  version: 235106e63529b2743d680b351fa2677fd496ce1e
+  version: 9cef256b595a9e616eb6aec1da446529b7705613
 - name: github.com/mhanygin/go-gocd
-  version: 5076a95392c2f5146a45540eced5a57dadb316c5
+  version: 9d3ee0ab515ce5c744904c2fdac193e1f4fc12f9
+- name: github.com/mitchellh/go-homedir
+  version: b8bc1bf767474819792c23f32d8286a45736f1c6
 - name: github.com/nats-io/go-nats
-  version: e6bb81b5a5f37ef7bf364bb6276e13813086c6ee
+  version: 34c8842105ac0b69c838a9998a239d482936c466
 - name: github.com/nlopes/slack
-  version: 46211dd87bc6dba492b0d72f1db389cd5087d690
+  version: ca8436d76f805ec1e682eaae2de3c3a9bc894b0f
 - name: github.com/philhofer/fwd
-  version: 98c11a7a6ec829d672b03833c3d69a7fae1ca972
+  version: 1612a298117663d7bc9a760ae20d383413859798
 - name: github.com/satori/go.uuid
-  version: b061729afc07e77a8aa4fad0a2fd840958f1942a
+  version: 5bf94b69c6b68ee1b541973bb8e1144db23a194b
 - name: github.com/Sirupsen/logrus
-  version: c078b1e43f58d563c74cebe63c85789e76ddb627
+  version: 00386b3fbd637582f90cb17482dc3087646c0ac2
 - name: github.com/stretchr/testify
-  version: 4d4bfba8f1d1027c4fdbe371823030df51419987
+  version: 05e8a0eda380579888eb53c394909df027f06991
   subpackages:
   - assert
+- name: github.com/technoweenie/multipartstreamer
+  version: a90a01d73ae432e2611d178c18367fbaa13e0154
 - name: github.com/tinylib/msgp
-  version: 362bfb3384d53ae4d5dd745983a4d70b6d23628c
+  version: b2b6a672cf1e5b90748f79b8b81fc8c5cf0571a1
   subpackages:
   - msgp
 - name: github.com/trivago/tgo
-  version: ad1dc89f5fe7ec80bc111ef9d9e93dc8bedf72ee
+  version: 92b6796af0cd3e2434e28816e07ae6d12c4233cc
   subpackages:
   - tcontainer
+  - treflect
+- name: github.com/valyala/bytebufferpool
+  version: e746df99fe4a3986f4d4f79e13c1e0117ce9c2f7
 - name: github.com/valyala/fasttemplate
-  version: 3b874956e03f1636d171bda64b130f9135f42cff
+  version: dcecefd839c4193db0d35b88ec65b4c12d360ab0
 - name: github.com/xanzy/go-gitlab
-  version: 726289beb12ec90d327f778901ef6259339f6312
+  version: e10d39cd405772761160b7b3a23cb1c4fa86b0a3
 - name: golang.org/x/net
-  version: 236b8f043b920452504e263bc21d354427127473
+  version: 02ac38e2528ff4adea90f184d71a3faa04b4b1b0
   subpackages:
+  - context
   - websocket
 - name: golang.org/x/sys
-  version: 9bb9f0998d48b31547d975974935ae9b48c7a03c
+  version: 7a4fde3fda8ef580a89dbae8138c26041be14299
   subpackages:
   - unix
+- name: google.golang.org/appengine
+  version: ad2570cd3913654e00c5f0183b39d2f998e54046
+  subpackages:
+  - internal
+  - internal/app_identity
+  - internal/base
+  - internal/datastore
+  - internal/log
+  - internal/modules
+  - internal/remote_api
 - name: gopkg.in/alecthomas/kingpin.v2
-  version: e9044be3ab2a8e11d4e1f418d12f0790d57e8d70
+  version: 7f0871f2e17818990e4eed73f9b5c2f429501228
+- name: gopkg.in/telegram-bot-api.v4
+  version: 0a57807db79efce7f6719fbb2c0e0f83fda79aec
 - name: gopkg.in/yaml.v2
-  version: a5b47d31c556af34a302ce5d659e6fea44d90de0
+  version: 3b4ad1db5b2a649883ff3782f5f9f6fb52be71af
 testImports:
 - name: github.com/davecgh/go-spew
   version: 04cdfd42973bb9c8589fd6a731800cf222fde1a9

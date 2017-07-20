@@ -9,6 +9,7 @@ const (
 	OutdatedEvent         = "OUTDATED"
 	SlackMsgEvent         = "SLACK_MESSAGE"
 	SlackPostEvent        = "SLACK_POST_MESSAGE"
+	TelegramMsgEvent      = "TELEGRAM_MESSAGE"
 	JiraHookEvent         = "JIRA"
 	UnknownEvent          = "UNKNOWN"
 )

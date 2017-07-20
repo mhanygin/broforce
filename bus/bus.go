@@ -10,8 +10,8 @@ import (
 	log "github.com/Sirupsen/logrus"
 	"github.com/satori/go.uuid"
 
-	"github.com/InnovaCo/broforce/config"
-	"github.com/InnovaCo/broforce/logger"
+	"github.com/mhanygin/broforce/config"
+	"github.com/mhanygin/broforce/logger"
 )
 
 var (

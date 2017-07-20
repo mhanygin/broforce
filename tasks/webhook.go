@@ -9,7 +9,7 @@ import (
 
 	"github.com/Jeffail/gabs"
 
-	"github.com/InnovaCo/broforce/bus"
+	"github.com/mhanygin/broforce/bus"
 	"os"
 	"strconv"
 )

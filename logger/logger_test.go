@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/InnovaCo/broforce/config"
+	"github.com/mhanygin/broforce/config"
 )
 
 func TestLogger4Handler(t *testing.T) {

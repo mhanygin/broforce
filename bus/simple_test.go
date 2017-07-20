@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/InnovaCo/broforce/config"
-	"github.com/InnovaCo/broforce/logger"
+	"github.com/mhanygin/broforce/config"
+	"github.com/mhanygin/broforce/logger"
 )
 
 func TestSimple(t *testing.T) {

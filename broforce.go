@@ -8,10 +8,10 @@ import (
 
 	"gopkg.in/alecthomas/kingpin.v2"
 
-	"github.com/InnovaCo/broforce/bus"
-	"github.com/InnovaCo/broforce/config"
-	"github.com/InnovaCo/broforce/logger"
-	"github.com/InnovaCo/broforce/tasks"
+	"github.com/mhanygin/broforce/bus"
+	"github.com/mhanygin/broforce/config"
+	"github.com/mhanygin/broforce/logger"
+	"github.com/mhanygin/broforce/tasks"
 )
 
 var Version = ""

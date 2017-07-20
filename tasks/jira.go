@@ -12,7 +12,7 @@ import (
 	"github.com/nlopes/slack"
 	"github.com/valyala/fasttemplate"
 
-	"github.com/InnovaCo/broforce/bus"
+	"github.com/mhanygin/broforce/bus"
 )
 
 func init() {

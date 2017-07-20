@@ -7,8 +7,8 @@ import (
 
 	"github.com/Sirupsen/logrus"
 
-	"github.com/InnovaCo/broforce/config"
-	"github.com/InnovaCo/broforce/logger/fluent"
+	"github.com/mhanygin/broforce/config"
+	"github.com/mhanygin/broforce/logger/fluent"
 )
 
 var (

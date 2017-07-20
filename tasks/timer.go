@@ -3,7 +3,7 @@ package tasks
 import (
 	"time"
 
-	"github.com/InnovaCo/broforce/bus"
+	"github.com/mhanygin/broforce/bus"
 )
 
 func init() {

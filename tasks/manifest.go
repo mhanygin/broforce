@@ -12,7 +12,7 @@ import (
 	"github.com/google/go-github/github"
 	"github.com/xanzy/go-gitlab"
 
-	"github.com/InnovaCo/broforce/bus"
+	"github.com/mhanygin/broforce/bus"
 )
 
 func init() {

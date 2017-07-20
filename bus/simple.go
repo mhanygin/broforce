@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/InnovaCo/broforce/config"
+	"github.com/mhanygin/broforce/config"
 )
 
 func init() {

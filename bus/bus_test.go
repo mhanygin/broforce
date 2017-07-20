@@ -6,8 +6,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/InnovaCo/broforce/config"
-	"github.com/InnovaCo/broforce/logger"
+	"github.com/mhanygin/broforce/config"
+	"github.com/mhanygin/broforce/logger"
 )
 
 func TestEventsBus(t *testing.T) {
